@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.vmodal {}
+
+.vmodal.open .Modal-overlay,
+.vmodal.open .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.vmodal.open .modal-window{
+    transform: translateY(100px);
+}
+
+.vmodal.open .Modal-overlay{
+    background: rgba(0, 0, 0, .5);
+}
+
+
+.vmodal.modal-hide .Modal-overlay,
+.vmodal.modal-hide .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.vmodal.modal-hide .modal-window{
+    transform: translateY(-200px);
+}
+
+.vmodal.modal-hide .Modal-overlay{
+    background: rgba(0, 0, 0, 0);
+}
+
+.modal-window, .Modal-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+.Modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .5s ease-in;
+}
+
+.modal-window {
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    margin: auto;
+    transform: translateY(-200px);
+    background: #fff;
+    transition: transform .2s ease-in;
+
+}
+
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.Modal-title {
+    font-size: 1.5rem;
+}
+
+.Modal-close {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+.modal-footer {
+    padding: 5px 10px;
+    border-top: 1px solid #eee;
+}
+
+.c-title {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.c-title h1 {
+    padding: 30px 50px;
+    font-size: 40px;
+    margin: auto;
+    font-weight: bolder;
+}
