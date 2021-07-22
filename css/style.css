@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.theme {
+    background-color: black;
+}
 .vmodal {}
 
 .vmodal.open .Modal-overlay,
@@ -27,7 +30,7 @@
 }
 
 .vmodal.modal-hide .modal-window{
-    transform: translateY(-200px);
+    transform: translateY(-400px);
 }
 
 .vmodal.modal-hide .Modal-overlay{
@@ -51,10 +54,10 @@
 
 .modal-window {
     width: 600px;
-    height: 300px;
+    height: 200px;
     border-radius: 5px;
     margin: auto;
-    transform: translateY(-200px);
+    transform: translateY(-400px);
     background: #fff;
     transition: transform .2s ease-in;
 
@@ -96,4 +99,16 @@
     font-size: 40px;
     margin: auto;
     font-weight: bolder;
+}
+
+
+.card {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 25px #05ecbd;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.card-body {
+    margin: auto;
 }
